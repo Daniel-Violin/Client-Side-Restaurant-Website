@@ -1,0 +1,82 @@
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #334d4d;
+  font-family: Arial;
+  border-radius: 25px;
+  
+}
+/* Changes scroll behaviour*/
+.html {
+  scroll-behavior: smooth;
+}
+/*Header and Footer*/
+.header, .footer {
+  background-color: #5c8a8a;
+  color: white;
+  padding: 15px;
+  border-radius: 25px;
+  
+}
+/*Any element I want to give center text-align*/
+.h{
+	text-align: center;
+}
+.orderbtn{
+	margin:0 auto;
+	text-align: center;
+}
+/*Warning message*/
+.warning{
+	color: red;
+	font-size: 12px;
+	text-align: center
+}
+/*Gradient Background*/
+body{
+background: rgb(253,252,201);
+background: radial-gradient(circle, rgba(253,252,201,1) 16%, rgba(153,29,146,1) 83%);
+}
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+.right {
+	position: relative;
+	
+}
+
+/*Summary at bottom of screen*/
+.total{
+	position: absolute; 
+	bottom: 0;
+}
+/*Size of outer columns*/
+.left, .right {
+  width: 25%;
+  border-radius: 25px;
+  
+  
+}
+/*Size of inner columns*/
+.middle {
+  width: 50%;
+  height: 100%;
+  border-radius: 25px;
+  
+}

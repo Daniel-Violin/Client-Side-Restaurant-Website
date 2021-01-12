@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!-- Allows me to anchor tag to top of page -->
+<html id = "top" class ="html">
+
+<head>
+<title>Middle-Earth Eats</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body onload= "init()">
+	<h1 class = "h">Middle-Earth Eats</h1>
+<!-- Navigation bar -->
+<div class="navbar">
+	<div class="dropdown">
+		<!-- Empty Dropdown Menu -->
+		<select id = "dropdown-menu" onchange="ddChange()">
+		<option disabled>Select a Restaurant</option>
+		</select>
+	</div>
+</div>
+
+
+<div class="row">
+	<!-- Left, Category Column -->
+  <div class="column left" style="background-color:#ffe6cc">
+    <h2 class = "h">Menu Categories</h2>
+	<!-- Unordered List of Categories -->
+    <ul id = "categories"></ul>
+  </div>
+	<!-- Middle, Menu Column -->
+  <div class="column middle" style="background-color:#ffcc99;">
+	<!-- Various headers with relevant info about current restaurant -->
+    <h2 id = "resName" class = "h">Menu</h2>
+	<h3 id = "resMin" class = "h"></h3>
+	<h4 id = "resCharge" class = "h"></h4>
+	<!-- Unordered List of Menu Items -->
+    <ul id = "menu"></ul>
+  </div>
+  <!-- Right, Summary Column -->
+  <div class="column right" style="background-color:#ffb366">
+    <h2 class = "h">Order Summary</h2>
+	<!-- Descriptive List of Order -->
+    <dl id = "summary"></dl>
+	<!-- Section with Order Summary Information -->
+	<div id = "total" class = "total"style ="text-align: center">
+		<p>-------------------------------------------------------------------</p>
+		<p id = "subTotal" style ="text-align: left"></p>
+		<p id = "delivery" style ="text-align: left"></p>
+		<p id = "tax" style ="text-align: left"></p>
+		<p id = "totalprice" style ="text-align: left"></p>
+		<!-- Warning telling users they cannot press the button -->
+		<p class = "warning" id = "warning" style = "text-align: middle color: red"></p>
+		<!-- Confirm Order Button -->
+		<div class = "wrapper"><button id = "orderbtn" class = "orderbtn" type="button" onclick="submitOrder()" disabled>Confirm Order</button></div>
+	</div>
+  </div>
+</div>
+<!-- Footer that allows you to jump back to the top of the page -->
+<div class="footer">
+  <a href="#top">Jump to top of page</a>
+</div>
+<script src="client.js"></script>
+</body>
+</html>
