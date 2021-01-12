@@ -1,3 +1,7 @@
+A web page that allows a user to browse menus for several restaurants, add items from a restaurant to an order, and simulate placing an order. 
+
+Everything implemented for this project will involve client-side programming within the browser. Everything is implemented using Javascript
+
 I will explain a few of my design decisions here:
 
 1. I decided to use Descriptive Lists to hold both my menu information and my order summary information.
